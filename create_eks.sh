@@ -1,4 +1,4 @@
 #!/bin/bash -x 
 
 
-eksctl create cluster --name=$(dockerpa) --region=us-east-1 
+eksctl create cluster --name=$(dockerpath) --region=us-east-1 
