@@ -11,4 +11,4 @@ docker images ls
 
 # Step 3: 
 # Run flask app
-docker run -itd -p 8000:80 python3-app
+docker run -itd -p 8000:80 tawfiq15/python3-app
