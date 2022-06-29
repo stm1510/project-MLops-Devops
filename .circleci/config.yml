@@ -31,10 +31,10 @@ jobs:
           name: run tests
           command: |
             . ~/.devop/bin/activate
-            make test
-      # run lints!
-      - run:
-          name: run lint
-          command: |
-            . ~/.devop/bin/activate
             make lint
+      # run lints!
+      #- run:
+      #    name: run lint
+      #    command: |
+      #      . ~/.devop/bin/activate
+      #      make lint
