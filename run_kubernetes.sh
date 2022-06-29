@@ -4,7 +4,7 @@
 
 # Step 1:
 # This is your Docker ID/path
-# dockerpath=tawfiq15/python3-app
+dockerpath=tawfiq15/python3-app
 
 # Step 2
 # Run the Docker Hub container with kubernetes

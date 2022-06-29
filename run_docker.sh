@@ -4,11 +4,11 @@
 
 # Step 1:
 # Build image and add a descriptive tag
-docker build -t python3-app .
+docker build -t tawfiq15/python3-app .
 # Step 2: 
 # List docker images
 docker images ls 
 
 # Step 3: 
 # Run flask app
- docker run -p 8000:5001 python3-app
+docker run -itd -p 8000:80 python3-app

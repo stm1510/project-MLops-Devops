@@ -5,8 +5,8 @@
 
 # Step 1:
 # Create dockerpath
-# dockerpath=tawfiq15/python3-app
-
+ echo "dockerpath=tawfiq15/python3-app" >> ~/.bashrc
+ source  ~/.bashrc
 # Step 2:  
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
