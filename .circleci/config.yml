@@ -41,7 +41,7 @@ jobs:
             make lint 
             
 workflows: 
-  default: 
+  tawfiq_workflow: 
     jobs: 
       - build
 
