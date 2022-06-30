@@ -29,13 +29,13 @@ jobs:
            
       - save_cache:
           paths:
-            - ~/.devop
+            - ~/venv
           key: v1-dependencies-{{ checksum "requirements.txt" }}
         
       - run:
           name: run tests
           command: |
-            . ~/.devop/bin/activate
+            . venv/bin/activate
                make lint 
 
       # run lints!
