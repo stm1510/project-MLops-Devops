@@ -1,5 +1,6 @@
 <include a CircleCI status badge, here>
 [![CircleCI](https://dl.circleci.com/status-badge/img/gh/stm1510/udacity-project-MLops-Devops/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/stm1510/udacity-project-MLops-Devops/tree/main)
+
 ## Project Overview
 
 In this project, you will apply the skills you have acquired in this course to operationalize a Machine Learning Microservice API. 
@@ -32,17 +33,24 @@ python3 -m pip install --user virtualenv
 
 # Check the Python path using `which python3`
 # Use a command similar to this one:
-python3 -m virtualenv --python=<path-to-Python3.7> .devops
-source .devops/bin/activate
-```
+python3 -m venv ~/.devops
+#source .devops/bin/activate
+source ~/.devops/bin/activate
+
 * Run `make install` to install the necessary dependencies
-
+make install
 ### Running `app.py`
-
+python app.py
 1. Standalone:  `python app.py`
-2. Run in Docker:  `./run_docker.sh`
-3. Run in Kubernetes:  `./run_kubernetes.sh`
 
+2. Run in Docker:  `./run_docker.sh`
+
+chmod 111 run_docker.sh
+./run_docker.sh
+
+3. Run in Kubernetes:  `./run_kubernetes.sh`
+chmod 111 run_docker.sh
+./run_kubernetes
 ### Kubernetes Steps
 
 * Setup and Configure Docker locally
