@@ -71,7 +71,21 @@ eksctl create cluster --region=us-east-1 --name=NAME of THE CLUSTER
 
 
 * Run via kubectl
+kubectl create deploy NAME_OF_DEPLOYMENT --image=DockerHUbImage 
+kubectl create deploy python3-app --image=tawfiq15/python3-app
+kubectl get nodes  ------ to get the nodes deployed 
+kubectl get deploy,rs,scv,pods   ---- to get more information about the pod thus pod status  
 
-kubectl 
+Expose the app to Port thus Port forwarding 
+
+kubectl port-forward pod/NAME --address 0.0.0.0 PORT:PORT
 
 
+
+
+ I included Locustfile to simulate the conatiner 
+install locust ---- pip install locust 
+
+run locust --- locust 
+
+check the browser and simulate the conatiner 
