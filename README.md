@@ -1,5 +1,5 @@
 <include a CircleCI status badge, here>
-
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/stm1510/udacity-project-MLops-Devops/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/stm1510/udacity-project-MLops-Devops/tree/main)
 ## Project Overview
 
 In this project, you will apply the skills you have acquired in this course to operationalize a Machine Learning Microservice API. 
@@ -28,7 +28,8 @@ You can find a detailed [project rubric, here](https://review.udacity.com/#!/rub
 * Create a virtualenv with Python 3.7 and activate it. Refer to this link for help on specifying the Python version in the virtualenv. 
 ```bash
 python3 -m pip install --user virtualenv
-# You should have Python 3.7 available in your host. 
+# You should have Python 3.7 available in your host.
+
 # Check the Python path using `which python3`
 # Use a command similar to this one:
 python3 -m virtualenv --python=<path-to-Python3.7> .devops
@@ -45,10 +46,24 @@ source .devops/bin/activate
 ### Kubernetes Steps
 
 * Setup and Configure Docker locally
+I built my docker locally with 
+docker build -t repo/app-name .
+
+repo = my dockerhub and app-name is the name of the app
+
+thus docker build -t tawfiq15/python3-app .
+
 * Setup and Configure Kubernetes locally
+
+i used eksctl to create my kubernetes 
+i wrote a script for using eksctl this is the command 
+
+eksctl create cluster --region=us-east-1 --name=NAME of THE CLUSTER
 * Create Flask app in Container
+
+
 * Run via kubectl
 
+kubectl 
 
 
-[![CircleCI](https://dl.circleci.com/status-badge/img/gh/stm1510/udacity-project-MLops-Devops/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/stm1510/udacity-project-MLops-Devops/tree/main)
