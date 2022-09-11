@@ -14,3 +14,4 @@ Werkzeug==0.16.0
 pylint==2.4.4
 pytest
 locust==1.0
+matplotlib
